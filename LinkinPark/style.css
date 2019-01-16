@@ -1,0 +1,17 @@
+a {
+    color: black;
+}
+a:hover {
+    color: blue;
+    background: black;
+}
+
+.test1:hover {
+    color: orange;
+    background: blue;
+    font-weight: 600;
+}
+
+.test1:visited {
+    color: blue;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auto Bots Roll Out!!</title>
+</head>
+<body>
+    <script>
+    var i = prompt("Enter a number")
+
+    function bumbleBee(n){
+        if (n === 0 || n === 1){
+            alert("Decepticon");
+        } else if (n % 2 === 0){
+            n = "even";
+        } else if (n % 2 === 0){
+            n = "odd";
+        }
+        return n
+    }
+    
+    console.log(bumbleBee(i));
+    </script>
+</body>
+</html>

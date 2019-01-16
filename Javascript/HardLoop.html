@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hard Loop</title>
+</head>
+<body>
+    <h1>Hard Loops</h1>
+    <script>
+
+        var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];                                                                                                                              
+
+        for (var i = 0; i < myFarm.length; i ++) {
+            var currentAnimal = myFarm[i];
+            console.log(myFarm[i]);
+
+            
+            if (currentAnimal.charAt(0) === "c") {
+                alert("That starts with a C!");
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
