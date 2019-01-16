@@ -69,3 +69,30 @@ var unsortedArr = [
 ];
 
 document.getElementById("start").innerHTML += unsortedArr;
+
+var a = 0
+var b = 1
+
+function sort(){
+while (b < unsortedArr.length) {
+  if (unsortedArr[a] < unsortedArr[b]) {
+    a++;
+    b++;
+  } else {
+    var temp = unsortedArr[a];
+    unsortedArr[a] = unsortedArr[b];
+    unsortedArr[b] = temp;
+    a = 0;
+    b = 1;
+  }
+}
+}
+
+sort();
+document.getElementById("go").onclick = function() {
+  document.getElementById("result").innerHTML = unsortedArr;
+}
+
+
+
+
