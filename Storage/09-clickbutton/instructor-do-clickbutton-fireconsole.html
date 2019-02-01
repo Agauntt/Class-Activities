@@ -20,26 +20,25 @@
   <button id="click-button">Click Me!!!!</button>
 
   <!-- JQuery -->
-  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- ================================================================================== -->
 
   <!-- Firebase JavaScript Link -->
-<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
-
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
   <script>
     // Initialize Firebase
-    // This is the code we copied and pasted from our app page
     var config = {
-    apiKey: "AIzaSyALO--39sRKfFg_b1nmsfQKsFGbzzyEc1Q",
-    authDomain: "my-first-project-2eb44.firebaseapp.com",
-    databaseURL: "https://my-first-project-2eb44.firebaseio.com",
-    projectId: "my-first-project-2eb44",
-    storageBucket: "my-first-project-2eb44.appspot.com",
-    messagingSenderId: "344949512895"
-  };
-  firebase.initializeApp(config);
+      apiKey: "AIzaSyALO--39sRKfFg_b1nmsfQKsFGbzzyEc1Q",
+      authDomain: "my-first-project-2eb44.firebaseapp.com",
+      databaseURL: "https://my-first-project-2eb44.firebaseio.com",
+      projectId: "my-first-project-2eb44",
+      storageBucket: "my-first-project-2eb44.appspot.com",
+      messagingSenderId: "344949512895"
+    };
+    firebase.initializeApp(config);
+
 
     // Variables
     // ================================================================================
@@ -63,8 +62,8 @@
       // **** Note how we are using the Firebase .set() method ****
       // **** .ref() refers to the path you want to save your data to
       // **** Since we left .ref() blank, it will save to the root directory
-      database.ref().set({
-        clickCount: clickCounter
+      database.ref('users/paperUsed').set({
+      clickCount: clickCounter
       });
 
       // Now! go to https://fir-click-counter-7cdb9.firebaseio.com/ to see the impact to the DB
