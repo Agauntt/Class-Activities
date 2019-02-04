@@ -1,0 +1,12 @@
+.jumbotron {
+    background-color: black;
+    color: white;
+}
+
+#newbie {
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 10px;
+}
