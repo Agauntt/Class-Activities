@@ -1,0 +1,16 @@
+{
+  "name": "geocode-inquirer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "geocode_challenge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "geocode": "0.0.3",
+    "inquirer": "^6.2.2",
+    "node-geocoder": "^3.22.0"
+  }
+}

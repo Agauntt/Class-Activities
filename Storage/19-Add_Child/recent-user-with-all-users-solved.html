@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!-- LINK TO FIREBASE GOES HERE -->
 
-  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
 
 </head>
 
@@ -98,18 +98,28 @@
   <script>
     // ========================================== START CODING BELOW!!
 
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyCs3K5zwuOuS0odq89IpPLC7HnXTOcDqgI",
-      authDomain: "recent-user-with-all-use-e8e76.firebaseapp.com",
-      databaseURL: "https://recent-user-with-all-use-e8e76.firebaseio.com",
-      projectId: "recent-user-with-all-use-e8e76",
-      storageBucket: ""
-    };
 
-    firebase.initializeApp(config);
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCkX8CkWEmaduUdp4UV2RjbCBiXIBoMOLk",
+    authDomain: "codersbay-d8093.firebaseapp.com",
+    databaseURL: "https://codersbay-d8093.firebaseio.com",
+    projectId: "codersbay-d8093",
+    storageBucket: "codersbay-d8093.appspot.com",
+    messagingSenderId: "894422740673"
+  };
+  firebase.initializeApp(config);
+  console.log(firebase);
 
     var dataRef = firebase.database();
+
+    var nameRef = dataRef.ref('scores/FirstPerson');
+    var data = {
+      name: "Aaron",
+      score: 43
+    }
+    nameRef.push(data);
+    console.log(data.name);
 
     // Initial Values
     var name = "";
