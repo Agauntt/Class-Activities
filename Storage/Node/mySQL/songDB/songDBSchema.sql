@@ -1,0 +1,18 @@
+CREATE DATABASE top_songs;
+
+USE top_songs;
+
+CREATE TABLE top5000(
+  id INT NOT NULL AUTO_INCREMENT,
+  artist_name VARCHAR(145) NOT NULL,
+  song_name VARCHAR(145) NOT NULL,
+  year INTEGER(5) NOT NULL,
+  world_pop DECIMAL(10) NOT NULL,
+  US_pop DECIMAL(10) NOT NULL,
+  UK_pop DECIMAL(10) NOT NULL,
+  Euro_pop DECIMAL(10) NOT NULL,
+  rest_world DECIMAL(10) NOT NULL,
+  PRIMARY KEY (id)
+  );
+
+SELECT * FROM top5000;
