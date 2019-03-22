@@ -21,7 +21,7 @@ var options = {
 // Create a geocoder object that can query the mapquest API
 var geocoder = NodeGeocoder(options);
 
-var args = process.argv;
+var args = process.argv[2];
 
 var addressArr = args.slice(2);
 var address = addressArr.join(" ");
