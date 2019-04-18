@@ -1,5 +1,5 @@
 {
-  "name": "post-author-association",
+  "name": "post-author-joins",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,9 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^5.16.0",
     "express": "^4.16.3",
-    "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2"
+    "mysql2": "^1.6.5",
+    "sequelize": "^4.43.1"
   }
 }
