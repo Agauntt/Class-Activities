@@ -44,10 +44,22 @@ app.post("/submit", function(req, res) {
   // we have to do it here, because the ajax post will convert it
   // to a string instead of a boolean
   book.read = false;
+  db.books.insert(book, function(err, book) {
+    if(err) {
+      res.json(err);
+    }
+    res.json(book);
+  });
 });
 
 // Find all books marked as read
-app.get("/read", function(req, res) {});
+app.get("/read", function(req, res) {
+  db.books.find({ read: true}, function(err, results) {
+    if(err) {
+      res.json(err);
+    }
+  })
+});
 
 // Find all books marked as unread
 app.get("/unread", function(req, res) {});
